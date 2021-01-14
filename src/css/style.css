@@ -1,0 +1,56 @@
+:root{
+    --bg-transparent: transparent;
+
+}
+
+.no-bg{
+    background: var(--bg-transparent);
+    
+    position: fixed;
+    width: 100%;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-transparent);
+    height: 100vh;
+
+}
+
+
+.icon-cfg{
+    padding-right: 20px !important;
+}
+
+.header{
+    background: url('../assets/images/capa-header.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+.header span::before{
+    content: "";
+    background-color: orangered;
+    height: 5px;
+    width: 500px;
+    display: flex;
+
+    align-self: center;
+    margin-bottom: 10px;
+
+}
